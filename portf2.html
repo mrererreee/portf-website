@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href='https://fonts.googleapis.com/css?family=Radio Canada' rel='stylesheet'>
+        <title>portfolioHome</title>
+    </head>
+    <body>  
+        <DIV CLASS="titles">
+            <div class = "home">HOME &#x2190</div>
+            <div class = "projects">PROJECTS &#9732</div>
+            <div class = "about">ABOUT</div>
+        </DIV>
+        
+        <p class = "blurb">Hello! I'm Meredith Toledo, a student at Cal Poly Pomona pursuing a bachelor's degree in Computer Engineering. I'm currently looking to pursue a career in software, preferably towards front-end, but I'd love to learn anything to expand my realm of knowledge, and become a better programmer. </p>
+        <p>Hi! This page is currently still a work in progress. Thanks!</p>
+        <div class = "contacts">
+            <div class = "phone"></div>
+            <div class = "email"></div>
+            <div class = "linkedin"></div>
+            <div class = "github"></div>
+        </div>
+    </body>
+</html>
+
+<style>
+    body {
+        background-color: aliceblue;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin-top: -10px;
+    }
+
+    .titles{
+   
+        display: flex;
+        flex-direction: row;
+        border: solid;
+        padding: 15px 200px;
+        margin-top:50px;
+    }
+
+    .blurb {
+        text-align: center;
+        margin-top: 50px;
+        width: 400px;
+        height: 400px; 
+        font-family: 'Radio Canada';
+        flex-direction:column;
+    }
+
+    .home {
+        font-family: 'Radio Canada';
+        font-style:bold;
+        flex-direction: row;
+        margin-left: 10px;
+        margin-right: 180px;
+    }
+
+    .projects {
+        font-family: 'Radio Canada';
+        flex-direction:row;
+        font-style:bold;
+        margin-left: 180px;
+        margin-right: 180px;
+    }
+
+    .about{
+        font-family: 'Radio Canada';
+        flex-direction:row;
+        margin-left: 180px;
+        margin-right: 10px;
+    }
+
+    .contacts {
+        text-align: center;
+        width: 300px;
+        height: 300px; 
+        font-family: 'Radio Canada';
+    
+    }
+</style>
