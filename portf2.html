@@ -6,15 +6,15 @@
     </head>
     <body>  
         <DIV CLASS="titles">
-            <div class = "home">HOME &#x2190</div>
-            <div class = "projects">PROJECTS &#9732</div>
+            <div class = "home">HOME</div>
+            <div class = "projects">PROJECTS</div>
             <div class = "about">ABOUT</div>
         </DIV>
         
         <p class = "blurb">Hello! I'm Meredith Toledo, a student at Cal Poly Pomona pursuing a bachelor's degree in Computer Engineering. I'm currently looking to pursue a career in software, preferably towards front-end, but I'd love to learn anything to expand my realm of knowledge, and become a better programmer. </p>
         <p>Hi! This page is currently still a work in progress. Thanks!</p>
         <div class = "contacts">
-            <div class = "phone"></div>
+            <div class = "phone">&#9742 +1 (310) 918 - 5431</div>
             <div class = "email"></div>
             <div class = "linkedin"></div>
             <div class = "github"></div>
@@ -38,8 +38,9 @@
         display: flex;
         flex-direction: row;
         border: solid;
-        padding: 15px 200px;
-        margin-top:50px;
+        padding: 15px 100px;
+        margin-top:50px; 
+    
     }
 
     .blurb {
@@ -48,7 +49,9 @@
         width: 400px;
         height: 400px; 
         font-family: 'Radio Canada';
+        font-size:20px;
         flex-direction:column;
+        margin-left: -400px;
     }
 
     .home {
@@ -75,10 +78,27 @@
     }
 
     .contacts {
-        text-align: center;
+        text-align: right;
         width: 300px;
         height: 300px; 
         font-family: 'Radio Canada';
     
+    }
+
+    .phone {
+        font-family: 'Radio Canada';
+        flex-direction: row;
+    }
+
+    .email {
+
+    }
+    
+    .linkedin {
+
+    }
+
+    .github {
+
     }
 </style>
