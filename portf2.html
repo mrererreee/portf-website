@@ -2,103 +2,269 @@
 <html>
     <head>
         <link href='https://fonts.googleapis.com/css?family=Radio Canada' rel='stylesheet'>
-        <title>portfolioHome</title>
+        <title>mere2</title>        
     </head>
-    <body>  
-        <DIV CLASS="titles">
-            <div class = "home">HOME</div>
-            <div class = "projects">PROJECTS</div>
-            <div class = "about">ABOUT</div>
-        </DIV>
-        
-        <p class = "blurb">Hello! I'm Meredith Toledo, a student at Cal Poly Pomona pursuing a bachelor's degree in Computer Engineering. I'm currently looking to pursue a career in software, preferably towards front-end, but I'd love to learn anything to expand my realm of knowledge, and become a better programmer. </p>
-        <p>Hi! This page is currently still a work in progress. Thanks!</p>
-        <div class = "contacts">
-            <div class = "phone">&#9742 +1 (310) 918 - 5431</div>
-            <div class = "email"></div>
-            <div class = "linkedin"></div>
-            <div class = "github"></div>
+    <body>
+        <div class="about">
+            <div class = "abt-me"><b>about me</b></div>
+            <div class="blurb">hello! i'm meredith toledo, a student at cal poly pomona pursuing a bachelor's degree in computer engineering. i'm
+                currently looking to pursue a career in software, preferably 
+                towards front-end, but i'd love to learn anything to expand my 
+                realm of knowledge, and become a better programmer.
+            </div>
+            <p>THIS PAGE IS CURRENTLY A WORK IN PROGRESS! THANK YOU.</p>
+        </div> 
+        <div class="projs-tab">
+            <div class="proj-title"><b>projects</b></div>
+            <a href = "https://github.com/mrererreee" target="_blank">
+                <div class ="git">github (view projects)</div>
+            </a>
+            <div class="arcProj">archived:</div>
+            <div class="efin">
+                <div class = "proj1">song player for nexys a7 100t fpga</div>
+                <div class = "p1blurb">finished dec. 2023. made with partner ethan song. its main functionalities are going through 3 loaded songs
+                    (made by calculation of frequencies ran through case statements) while displaying its track number through an external monitor
+                    and the seven segment displays on the fpga board itself. it also has a pause and reset button and was activated based on switches.
+                </div>
+            </div>
+            <div class="mcus">
+                <div class = "proj2">intro to microcontrollers (labs and finals)</div>
+                <div class = "p2blurb">finished aug. 2023. a compilation of the labs i've completed to learn the concepts of microcontrollers (more
+                    specifically the PIC18F4321). this includes coding lighting pattern segments with assembly and c on a seven segment display to
+                    programming a calculator on a liquid crystal display. this link contains youtube videos and all code files.
+                </div>
+                <a href = "https://github.com/mrererreee/3301-Project-Files" target="_blank">
+                    <div class="comp">compilation</div>
+                </a>
+            </div>
+            <div class="currentProj">in progress/currently learning:</div>
+            <a href = "https://github.com/mrererreee/Learning-Arduino" target ="_blank">
+                <div class="proj3">arduino</div>
+            </a>
+            <div class="p3blurb">a compilation of me reviewing and relearning mcu concepts and applying it to the arduino through simple projects to be
+                developed into bigger things. title can be clicked to be taken to repository!
+            </div>
+            <div class = "proj4">matchmaker design</div>
+            <div class = "p4blurb">a project of ui/ux design to prototype a virtual significant other app.</div>
+            <a href ="https://drive.google.com/drive/folders/1cUyDs5FxkFF0dGvLyDhJzla8u-bltuhy?usp=drive_link" target="_blank">
+                <div class ="comp2">current process book pages</div>
+            </a>
+            <div class = "proj5">cpp miniloop</div>
+            <div class = "p5blurb">electrical/software aspect of mini version of "hyperloop" prototype with arduino nano. hyperloop's functionality was
+                to build a travel capsule/transportation system that went from LA to SF in a matter of 30 minutes. for miniloop, we were to build it on
+                a smaller scale within certain constraints.
+            </div>
         </div>
+        <div class = "socials">
+            <div class = "title2">contact me</div>
+            <div class = "phone">&#9742 + 1 (310) 918 - 5431</div>
+            <div class = "email">&#9993 meretolecollege@gmail.com</div>
+            <div class= "linkedin">
+                <a href = "https://www.linkedin.com/in/meredith-toledo-813148242/" target="_blank">
+                    linkedin
+                </a>
+            </div>
+            <div class = "loc">	&#xf3c5 Carson, CA</div>
+        </div>
+
     </body>
 </html>
 
 <style>
+
     body {
         background-color: aliceblue;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        margin-top: -10px;
     }
 
-    .titles{
-   
-        display: flex;
-        flex-direction: row;
+    .about {
+        flex-direction:column; 
+    }
+
+    .abt-me {
+        text-align: center;
+        font-family: 'Radio Canada';
+        font-size:20px;
         border: solid;
-        padding: 15px 100px;
-        margin-top:50px; 
-    
+        padding: 10px 20px;
+        height: 25px;
+        width: 100px;
+        margin-left: 22px;
+        margin-top: 35px;
     }
 
     .blurb {
+        text-align: left;
+        font-family: 'Radio Canada';
+        font-size:16px;
+        padding:10px 20px;
+        height:200px;
+        width:350px;
+        margin-top: 10px;
+    }
+
+    .projs-tab {
+        flex-direction:column;
+    }
+
+    .proj-title {
         text-align: center;
-        margin-top: 50px;
-        width: 400px;
-        height: 400px; 
         font-family: 'Radio Canada';
         font-size:20px;
-        flex-direction:column;
-        margin-left: -400px;
+        border: solid;
+        padding: 10px 20px;
+        height: 25px;
+        width: 100px;
+        margin-left: 22px;
+        margin-top: 35px;       
     }
 
-    .home {
+    .arcProj {
+        text-align: left;
         font-family: 'Radio Canada';
-        font-style:bold;
-        flex-direction: row;
-        margin-left: 10px;
-        margin-right: 180px;
+        font-size: 18px;
+        padding:10px 20px;
+        height:10px;
+        width:20px;
+        margin-top: 7px;
     }
 
-    .projects {
+    .git {
+        color: rgb(51, 51, 81);
         font-family: 'Radio Canada';
-        flex-direction:row;
-        font-style:bold;
-        margin-left: 180px;
-        margin-right: 180px;
+        margin-top:6px;
+        margin-left:22px;
     }
 
-    .about{
+    .arcProj {
+        text-align: left;
         font-family: 'Radio Canada';
-        flex-direction:row;
-        margin-left: 180px;
-        margin-right: 10px;
+        font-size: 18px;
+        padding:10px 20px;
+        height:10px;
+        width:20px;
+        margin-top: 7px;
     }
 
-    .contacts {
-        text-align: right;
-        width: 300px;
-        height: 300px; 
+    .proj1 {
+        text-align: left;
         font-family: 'Radio Canada';
+        font-size: 18px;
+        padding:10px 20px;
+        height:10px;
+        width:300px;
+        margin-top: 7px;
+    }
+
+    .p1blurb {
+        text-align: left;
+        font-family: 'Radio Canada';
+        font-size:16px;
+        padding:10px 20px;
+        height:145px;
+        width:450px;
+        margin-top: 6px;
+    }
+
+    .proj2 {
+        text-align: left;
+        font-family: 'Radio Canada';
+        font-size: 18px;
+        padding:10px 20px;
+        height:10px;
+        width:400px;
+        margin-top: 7px;
+    }
+
+    .p2blurb {
+        text-align: left;
+        font-family: 'Radio Canada';
+        font-size:16px;
+        padding:10px 20px;
+        height:100px;
+        width:450px;
+        margin-top: 6px;        
+    }
+
+    .comp {
+        color: rgb(51, 51, 81);
+        font-family: 'Radio Canada';
+        margin-top:13px;
+        margin-left:21px;
+    }
+
+    .currentProj{
+        text-align: left;
+        font-family: 'Radio Canada';
+        font-size: 18px;
+        padding:10px 20px;
+        height:10px;
+        width:400px;
+        margin-top: 12px;        
+    }
+
+    .proj3 {
+        text-align: left;
+        font-family: 'Radio Canada';
+        font-size: 18px;
+        padding:10px 20px;
+        height:10px;
+        width:300px;
+        margin-top: 7px;
+    }
+
+    .p3blurb {
+        text-align: left;
+        font-family: 'Radio Canada';
+        font-size:16px;
+        padding:10px 20px;
+        height:80px;
+        width:450px;
+        margin-top: 6px;        
+    }
+    .proj4 {
+        text-align: left;
+        font-family: 'Radio Canada';
+        font-size: 18px;
+        padding:10px 20px;
+        height:10px;
+        width:300px;
+        margin-top: 7px;
+    }
+
+    .p4blurb {
+        text-align: left;
+        font-family: 'Radio Canada';
+        font-size:16px;
+        padding:10px 20px;
+        height:30px;
+        width:450px;
+        margin-top: 6px;        
+    }
     
-    }
-
-    .phone {
+    .comp2 {
+        color: rgb(51, 51, 81);
         font-family: 'Radio Canada';
-        flex-direction: row;
+        margin-top:7px;
+        margin-left:21px;
+    }
+    .proj5 {
+        text-align: left;
+        font-family: 'Radio Canada';
+        font-size: 18px;
+        padding:10px 20px;
+        height:10px;
+        width:400px;
+        margin-top: 7px;
     }
 
-    .email {
-
+    .p5blurb {
+        text-align: left;
+        font-family: 'Radio Canada';
+        font-size:16px;
+        padding:10px 20px;
+        height:100px;
+        width:450px;
+        margin-top: 6px;        
     }
-    
-    .linkedin {
 
-    }
-
-    .github {
-
-    }
 </style>
